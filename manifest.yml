@@ -1,0 +1,4 @@
+---
+applications:
+  - name: springnames
+    path: target/Spring-boot-app-1.0-SNAPSHOT.jar
