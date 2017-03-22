@@ -9,12 +9,12 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot!";
+        return "Greetings from Spring Boot! put your name in the path for a personal greeting!";
     }
 
     @RequestMapping("/{name}")
     public String name_inspector(@PathVariable("name") String name) {
-        if (name.equals("Micah")) {
+        if (name.toLowerCase().trim().equals("micah")) {
             return "GO JUMP IN A LAKE";
         }
         return "Hello "+name+" how's it goin?";
